@@ -1,0 +1,95 @@
+{
+  "projects": [
+    {
+      "title": "Coastal House Renovation",
+      "category": "Renovation",
+      "location": "South Coast, NSW",
+      "description": "A full coastal home renovation transforming every key space. The project included a kitchen rebuild with custom sage cabinetry and ocean views, two tiled bathrooms with premium fixtures, and a hardwood deck with plunge pool and glass balustrade.",
+      "tags": [
+        "Renovation",
+        "Kitchen",
+        "Bathroom",
+        "Decking",
+        "Joinery"
+      ],
+      "thumbnail": "/images/project-kitchen.jpg",
+      "images": [
+        "/images/project-kitchen.jpg",
+        "/images/project-pool.jpg",
+        "/images/project-ensuite.jpg",
+        "/images/project-bathroom.jpg"
+      ]
+    },
+    {
+      "title": "Coastal Family Home",
+      "category": "New Build",
+      "location": "Mollymook, NSW",
+      "description": "A four-bedroom coastal home with spotted gum flooring, custom cabinetry throughout and a north-facing deck to maximise the outlook. Delivered on time and on budget over a seven-month build.",
+      "tags": [
+        "New Build",
+        "Joinery",
+        "Decking",
+        "Timber Frame"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=900&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=900&q=80",
+        "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=900&q=80",
+        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=900&q=80"
+      ]
+    },
+    {
+      "title": "Hardwood Entertainer's Deck",
+      "category": "Decking",
+      "location": "Ulladulla, NSW",
+      "description": "A 65m² hardwood deck with integrated bench seating, a built-in planter border and a feature pergola. Built for the coastal environment with stainless steel fixings and premium hardwood throughout.",
+      "tags": [
+        "Decking",
+        "Pergola",
+        "Outdoor Living"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80",
+        "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=900&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80"
+      ]
+    },
+    {
+      "title": "Kitchen & Laundry Overhaul",
+      "category": "Renovation",
+      "location": "Nowra, NSW",
+      "description": "A full kitchen gut and rebuild — custom cabinetry with soft-close drawers, stone benchtops and a generous island bench. The laundry was fully reconfigured at the same time.",
+      "tags": [
+        "Renovation",
+        "Joinery",
+        "Cabinetry",
+        "Fit-Out"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80",
+        "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=900&q=80",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=900&q=80"
+      ]
+    },
+    {
+      "title": "Alfresco & Pergola",
+      "category": "Outdoor Living",
+      "location": "Huskisson, NSW",
+      "description": "An alfresco entertaining space with an attached pergola, feature lighting and a custom outdoor kitchen bench, engineered to complement the existing roofline and blend seamlessly into the backyard.",
+      "tags": [
+        "Alfresco",
+        "Pergola",
+        "Outdoor Kitchen",
+        "Decking"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=900&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=900&q=80",
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=80",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80"
+      ]
+    }
+  ]
+}

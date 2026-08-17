@@ -1,0 +1,22 @@
+{
+  "testimonials": [
+    {
+      "name": "Sarah K.",
+      "location": "Mollymook, NSW",
+      "quote": "We hired Timmerman to build a large deck and pergola at our Mollymook property. From the first quote through to the final coat of oil, the whole experience was professional and stress-free. The quality of the timber work is exceptional — guests can't stop commenting on it.",
+      "rating": 5
+    },
+    {
+      "name": "David & Paula R.",
+      "location": "Ulladulla, NSW",
+      "quote": "We did a full kitchen and laundry renovation and couldn't be happier. Timmerman's attention to detail in the joinery is second to none — everything is perfectly fitted, clean and exactly what we envisioned. He kept us informed every step of the way and finished on schedule.",
+      "rating": 5
+    },
+    {
+      "name": "Mark T.",
+      "location": "Batemans Bay, NSW",
+      "quote": "I've used Timmerman across two properties now — an extension on my home and a full fitout on my investment property. Both times the standard of work has been outstanding. He's my first call for anything building-related on the South Coast. Highly recommended without reservation.",
+      "rating": 5
+    }
+  ]
+}

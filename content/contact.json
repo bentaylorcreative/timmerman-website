@@ -1,0 +1,29 @@
+{
+  "phone": "0433 886 834",
+  "email": "timmermancc@iinet.net.au",
+  "service_area": "South Coast NSW",
+  "hours": "Mon–Fri 7am–5pm, Sat 8am–12pm",
+  "instagram": "https://www.instagram.com/timmermancc/",
+  "areas": [
+    "Nowra", "Ulladulla", "Mollymook", "Batemans Bay",
+    "Milton", "Berry", "Huskisson", "Jervis Bay",
+    "Kangaroo Valley", "Shoalhaven"
+  ],
+  "project_types": [
+    { "label": "New Home Build",          "value": "new-build" },
+    { "label": "Renovation / Extension",  "value": "renovation" },
+    { "label": "Deck or Pergola",         "value": "deck" },
+    { "label": "Custom Joinery / Fit-Out","value": "joinery" },
+    { "label": "Framing & Cladding",      "value": "framing" },
+    { "label": "Doors & Windows",         "value": "doors-windows" },
+    { "label": "Other / Not Sure Yet",    "value": "other" }
+  ],
+  "budget_ranges": [
+    { "label": "Under $10,000",       "value": "under-10k" },
+    { "label": "$10,000 – $25,000",   "value": "10k-25k" },
+    { "label": "$25,000 – $75,000",   "value": "25k-75k" },
+    { "label": "$75,000 – $150,000",  "value": "75k-150k" },
+    { "label": "$150,000+",           "value": "150k-plus" },
+    { "label": "Not sure yet",        "value": "unsure" }
+  ]
+}

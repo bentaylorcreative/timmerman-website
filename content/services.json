@@ -1,0 +1,24 @@
+{
+  "services": [
+    {
+      "title": "New Builds",
+      "description": "From the foundations to the finishing touches, we manage custom home builds with a focus on craftsmanship and attention to detail throughout every stage.",
+      "icon": "home"
+    },
+    {
+      "title": "Renovations & Extensions",
+      "description": "Transform your existing space with thoughtfully designed renovations and seamless extensions that enhance both function and value.",
+      "icon": "renovation"
+    },
+    {
+      "title": "Kitchens",
+      "description": "Beautifully designed and expertly built kitchens \u2014 from full gut and rebuilds to custom cabinetry, stone benchtops and quality fit-outs that stand the test of time.",
+      "icon": "kitchen"
+    },
+    {
+      "title": "Custom Joinery & Fit-Out",
+      "description": "Bespoke cabinetry, built-ins, shelving and interior fit-outs crafted with quality materials and a refined finish that elevates any room.",
+      "icon": "joinery"
+    }
+  ]
+}

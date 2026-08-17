@@ -1,0 +1,300 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: uploads
+public_folder: /uploads
+
+locale: en
+
+# ─────────────────────────────────────────
+# SITE SETTINGS & CONTACT DETAILS
+# ─────────────────────────────────────────
+collections:
+
+  - name: settings
+    label: "⚙️ Site Settings"
+    files:
+
+      - name: homepage
+        label: "Homepage Text & Stats"
+        file: content/site.json
+        fields:
+          - label: "Hero Eyebrow Text (small text above main heading)"
+            name: hero_eyebrow
+            widget: string
+            hint: "e.g. South Coast NSW — Licensed Carpenter & Builder"
+
+          - label: "Hero Main Heading"
+            name: hero_heading
+            widget: string
+            hint: "The large headline on the banner image"
+
+          - label: "Hero Subtext"
+            name: hero_subtext
+            widget: text
+            hint: "The paragraph below the main heading"
+
+          - label: "Stat 1 — Number"
+            name: stat_1_number
+            widget: string
+            hint: "e.g. 15+"
+
+          - label: "Stat 1 — Label"
+            name: stat_1_label
+            widget: string
+            hint: "e.g. Years on the South Coast"
+
+          - label: "Stat 2 — Number"
+            name: stat_2_number
+            widget: string
+            hint: "e.g. 200+"
+
+          - label: "Stat 2 — Label"
+            name: stat_2_label
+            widget: string
+
+          - label: "Stat 3 — Number"
+            name: stat_3_number
+            widget: string
+            hint: "e.g. 100%"
+
+          - label: "Stat 3 — Label"
+            name: stat_3_label
+            widget: string
+
+          - label: "About Section Heading"
+            name: about_heading
+            widget: string
+
+          - label: "About Section Introduction"
+            name: about_intro
+            widget: text
+
+          - label: "Call-to-Action Heading"
+            name: cta_heading
+            widget: string
+
+          - label: "Call-to-Action Subtext"
+            name: cta_subtext
+            widget: text
+
+      - name: contact
+        label: "Contact Details & Form Options"
+        file: content/contact.json
+        fields:
+          - label: "Phone Number"
+            name: phone
+            widget: string
+
+          - label: "Email Address"
+            name: email
+            widget: string
+
+          - label: "Service Area (short description)"
+            name: service_area
+            widget: string
+            hint: "e.g. South Coast NSW"
+
+          - label: "Business Hours"
+            name: hours
+            widget: string
+            hint: "e.g. Mon–Fri 7am–5pm, Sat 8am–12pm"
+
+          - label: "Instagram URL"
+            name: instagram
+            widget: string
+
+          - label: "Service Area Locations (tags on contact page)"
+            name: areas
+            widget: list
+            field:
+              label: Location
+              name: location
+              widget: string
+            hint: "Add or remove the suburb tags shown on the contact page"
+
+          - label: "Project Type Options (contact form dropdown)"
+            name: project_types
+            widget: list
+            hint: "These appear as options in the 'Type of Project' dropdown on the contact form"
+            fields:
+              - { label: "Option Label (shown to visitor)", name: label, widget: string }
+              - { label: "Option Value (internal, no spaces)", name: value, widget: string }
+
+          - label: "Budget Range Options (contact form dropdown)"
+            name: budget_ranges
+            widget: list
+            hint: "These appear as options in the 'Approximate Budget' dropdown on the contact form"
+            fields:
+              - { label: "Option Label (shown to visitor)", name: label, widget: string }
+              - { label: "Option Value (internal, no spaces)", name: value, widget: string }
+
+  # ─────────────────────────────────────────
+  # SERVICES
+  # ─────────────────────────────────────────
+  - name: services
+    label: "🔨 Services"
+    files:
+      - name: services
+        label: "All Services"
+        file: content/services.json
+        fields:
+          - name: services
+            label: Services
+            widget: list
+            hint: "Add, remove or reorder the service cards shown on the homepage"
+            fields:
+              - label: "Service Title"
+                name: title
+                widget: string
+
+              - label: "Service Description"
+                name: description
+                widget: text
+
+              - label: "Icon"
+                name: icon
+                widget: select
+                hint: "Choose an icon that best represents this service"
+                options:
+                  - { label: "House / New Build",      value: home }
+                  - { label: "Renovation",              value: renovation }
+                  - { label: "Deck / Outdoor",          value: deck }
+                  - { label: "Door",                    value: door }
+                  - { label: "Framing / Grid",          value: framing }
+                  - { label: "Joinery / Grid Squares",  value: joinery }
+
+  # ─────────────────────────────────────────
+  # PROJECTS / GALLERY
+  # ─────────────────────────────────────────
+  - name: projects
+    label: "📸 Projects / Gallery"
+    files:
+      - name: projects
+        label: "All Projects"
+        file: content/projects.json
+        fields:
+          - name: projects
+            label: Projects
+            widget: list
+            hint: "Each project appears as a card in the gallery. Click a card opens a popup with images and details."
+            fields:
+              - label: "Project Title"
+                name: title
+                widget: string
+
+              - label: "Category"
+                name: category
+                widget: string
+                hint: "e.g. New Build, Renovation, Decking, Custom Joinery"
+
+              - label: "Location"
+                name: location
+                widget: string
+                hint: "e.g. Mollymook, NSW"
+
+              - label: "Project Description"
+                name: description
+                widget: text
+                hint: "Shown in the popup when a visitor clicks the gallery image"
+
+              - label: "Tags"
+                name: tags
+                widget: list
+                hint: "Short labels shown as chips in the popup (e.g. New Build, Joinery, Decking)"
+                field:
+                  label: Tag
+                  name: tag
+                  widget: string
+
+              - label: "Thumbnail Image (shown in the gallery grid)"
+                name: thumbnail
+                widget: image
+                hint: "The image shown in the gallery. Landscape works best."
+
+              - label: "Popup Images (up to 3 photos shown in the lightbox)"
+                name: images
+                widget: list
+                hint: "Add 1–3 photos for the carousel in the project popup"
+                field:
+                  label: Image
+                  name: image
+                  widget: image
+
+  # ─────────────────────────────────────────
+  # SUBCONTRACTOR NETWORK
+  # ─────────────────────────────────────────
+  - name: subcontractors
+    label: "🔧 Our Network (Subcontractors)"
+    files:
+      - name: subcontractors
+        label: "All Subcontractors"
+        file: content/subcontractors.json
+        fields:
+          - name: subcontractors
+            label: Subcontractors
+            widget: list
+            hint: "Add, remove or update the tradespeople shown in the Our Network section"
+            fields:
+              - label: "Name"
+                name: name
+                widget: string
+                hint: "e.g. Mark Henley"
+
+              - label: "Trade / Specialty"
+                name: trade
+                widget: string
+                hint: "e.g. Electrician, Plumber, Tiler"
+
+              - label: "Website (display text)"
+                name: website
+                widget: string
+                hint: "e.g. henleyelectrical.com.au"
+
+              - label: "Website URL (full link)"
+                name: website_url
+                widget: string
+                hint: "e.g. https://henleyelectrical.com.au — use # if no website yet"
+
+              - label: "Photo"
+                name: photo
+                widget: image
+                hint: "Headshot or trade photo — square crops work best"
+
+  # ─────────────────────────────────────────
+  # TESTIMONIALS
+  # ─────────────────────────────────────────
+  - name: testimonials
+    label: "⭐ Testimonials"
+    files:
+      - name: testimonials
+        label: "All Testimonials"
+        file: content/testimonials.json
+        fields:
+          - name: testimonials
+            label: Testimonials
+            widget: list
+            hint: "Add, edit or remove client reviews shown on the homepage"
+            fields:
+              - label: "Client Name"
+                name: name
+                widget: string
+                hint: "e.g. Sarah K. (use initials for privacy if preferred)"
+
+              - label: "Location"
+                name: location
+                widget: string
+                hint: "e.g. Mollymook, NSW"
+
+              - label: "Review / Quote"
+                name: quote
+                widget: text
+
+              - label: "Star Rating"
+                name: rating
+                widget: number
+                min: 1
+                max: 5
+                default: 5
+                value_type: int
